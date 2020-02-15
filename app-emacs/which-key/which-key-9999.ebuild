@@ -20,10 +20,11 @@ RDEPEND="${DEPEND}"
 SITEFILE="99${PN}-gentoo.el"
 
 src_compile(){
-	elisp-compile which-key.el
+	rm which-key-tests.el
+	elisp_src_compile
 	elisp-make-autoload-file
 }
 
 src_install(){
-	elisp-install ${PN} which-key.el* which-key-autoloads.el
+	elisp_src_install
 }
