@@ -20,6 +20,7 @@ RDEPEND="${DEPEND}"
 SITEFILE="99${PN}-gentoo.el"
 
 src_compile(){
+	rm yasnippet-tests.el
 	elisp_src_compile
 	elisp-make-autoload-file
 }
