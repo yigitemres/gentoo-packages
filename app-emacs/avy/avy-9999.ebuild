@@ -20,10 +20,11 @@ RDEPEND="${DEPEND}"
 SITEFILE="99${PN}-gentoo.el"
 
 src_compile(){
-	elisp-compile avy.el
+	rm avy-test.el
+	elisp_src_compile
 	elisp-make-autoload-file
 }
 
 src_install(){
-	elisp-install ${PN} avy.el* avy-autoloads.el
+	elisp_src_install
 }
