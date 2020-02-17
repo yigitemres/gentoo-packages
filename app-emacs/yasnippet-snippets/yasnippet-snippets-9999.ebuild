@@ -27,5 +27,5 @@ src_compile(){
 src_install(){
 	elisp_src_install
 	insinto /usr/share/emacs/site-lisp/yasnippet-snippets/snippets
-	doins -r snippets/*
+	doins -r snippets/.
 }
