@@ -24,7 +24,7 @@ src_compile(){
 		-e 's/addprefix -L ..\/..\/,$(DEPS)/addprefix -L \/usr\/share\/emacs\/site-lisp\/,$(DEPS)/' \
 		default.mk
 
-	emake
+	emake lisp
 }
 
 src_install(){
