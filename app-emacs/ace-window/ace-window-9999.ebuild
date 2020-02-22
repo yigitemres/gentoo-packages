@@ -13,7 +13,7 @@ LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND=""
+DEPEND="app-emacs/avy"
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"
 
