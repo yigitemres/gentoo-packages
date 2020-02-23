@@ -22,10 +22,14 @@ SITEFILE="99${PN}-gentoo.el"
 src_compile(){
 	sed -i 's/-L ..\/pg/-L \/usr\/share\/emacs\/site-lisp\/pg-el/' Makefile
 	emake
+	elisp-make-autoload-file
 }
 
 src_install(){
 	elisp_src_install
+
 	insinto /usr/share/emacs/site-lisp/emacsql/
-	doins sqlite/{emacs*,sql*}
+	doins sqlite/emacsql.c sqlite/sqlite3.{c,h}
+	exeinto /usr/share/emacs/site-lisp/emacsql/
+	doexe sqlite/emacsql-sqlite
 }
