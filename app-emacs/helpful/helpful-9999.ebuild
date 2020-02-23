@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND="
 	app-emacs/elisp-refs
-	app-emacs/f-el
+	app-emacs/f
 "
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"

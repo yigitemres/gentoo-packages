@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND="
 	app-emacs/loop-el
-	app-emacs/s-el
+	app-emacs/s
 "
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"

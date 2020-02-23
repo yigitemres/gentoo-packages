@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND="
 	app-emacs/dash
-	app-emacs/f-el
+	app-emacs/f
 	app-emacs/ht-el
 	app-emacs/hydra
 	app-emacs/markdown-mode
