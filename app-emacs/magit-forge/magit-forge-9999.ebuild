@@ -16,9 +16,11 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="
 	app-emacs/closql
 	app-emacs/dash
-	app-emacs/ghub
 	app-emacs/emacsql
+	app-emacs/ghub
+	app-emacs/graphql
 	app-emacs/magit
+	app-emacs/magit-popup
 	app-emacs/markdown-mode
 	app-emacs/transient
 	app-emacs/treepy
@@ -38,15 +40,20 @@ src_compile(){
 
 	# Fix dependencies folder and location
 	sed -i \
-#		-e 's/magit\/lisp/magit/' \
+		-e 's/magit\/lisp/magit/' \
 		-e 's/transient\/lisp/transient/' \
 		-e 's/addprefix -L ..\/..\/,$(DEPS)/addprefix -L \/usr\/share\/emacs\/site-lisp\/,$(DEPS)/' \
 		default.mk
 
-	emake
-
+	#emake
+	cd lisp/
+	elisp-make-autoload-file
 }
 
 src_install(){
-	elisp_src_install
+	#elisp_src_install
+
+	elisp-site-file-install "${FILESDIR}/${SITEFILE}"
+	insinto /usr/share/emacs/site-lisp/magit-forge
+	doins lisp/*.el
 }

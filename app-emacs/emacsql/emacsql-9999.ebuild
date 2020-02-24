@@ -28,8 +28,8 @@ src_compile(){
 src_install(){
 	elisp_src_install
 
-	insinto /usr/share/emacs/site-lisp/emacsql/
+	insinto /usr/share/emacs/site-lisp/emacsql/sqlite
 	doins sqlite/emacsql.c sqlite/sqlite3.{c,h}
-	exeinto /usr/share/emacs/site-lisp/emacsql/
+	exeinto /usr/share/emacs/site-lisp/emacsql/sqlite
 	doexe sqlite/emacsql-sqlite
 }
