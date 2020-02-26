@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/AndreaCrotti/yasnippet-snippets.git"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="a ~amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 
 DEPEND=""
 BDEPEND="${DEPEND}"

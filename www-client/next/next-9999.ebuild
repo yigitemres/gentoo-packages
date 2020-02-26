@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/atlas-engineer/next.git"
 # TODO: Necessary to download files script. Gonna fix all dependency installs by creating dev-lisp.
 RESTRICT="network-sandbox"
 
-LICENSE="BSD-3"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 

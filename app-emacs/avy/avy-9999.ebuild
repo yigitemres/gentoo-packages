@@ -9,7 +9,7 @@ DESCRIPTION="avy is a GNU Emacs package for jumping to visible text using a char
 HOMEPAGE="https://github.com/abo-abo/avy"
 EGIT_REPO_URI="https://github.com/abo-abo/avy.git"
 
-LICENSE=""
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
