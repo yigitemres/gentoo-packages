@@ -29,7 +29,12 @@ src_install(){
 	elisp_src_install
 	insinto /usr/share/emacs/site-lisp/all-the-icons/data
 	doins data/*
-	#insinto $USERHOME/.local/share/fonts #TODO: What is var $USERHOME?
-	#doins fonts/*
-	#fc-cache -f -v
+
+	insinto /usr/share/fonts/all-the-icons #TODO: What is var $USERHOME?
+	doins fonts/*
+}
+
+pkg_postinst(){
+	elog "Updating font cache..."
+	fc-cache -f -v
 }
