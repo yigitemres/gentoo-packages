@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="
-	app-emacs/loop-el
+	app-emacs/loop
 	app-emacs/s
 "
 BDEPEND="${DEPEND}"
