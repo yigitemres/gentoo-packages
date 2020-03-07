@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/emacs-lsp/lsp-mode.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="ada angular bash cpp csharp clojure cmake crystal css d dart dhall dockerfile dart elixir elm erlang eslinf fsharp  go groovy hack html haskell lua java js jsflow json julia kotlin nim ocaml php powershell python r ruby rust scala (swift) terraform tex verilog vhdl vimscript vue xml yaml"
+IUSE="ui flycheck company treemacs helm ivy dap ada angular bash cpp csharp clojure cmake crystal css d dart dhall dockerfile dart elixir elm erlang eslinf fsharp  go groovy hack html haskell lua java js jsflow json julia kotlin nim ocaml php powershell python r ruby rust scala (swift) terraform tex verilog vhdl vimscript vue xml yaml"
 
 # fortran adds auto use itself... removed.
 # lsp-mode needs hdyra because of lv-el
@@ -24,6 +24,14 @@ DEPEND="
 	app-emacs/hydra
 	app-emacs/markdown-mode
 	app-emacs/spinner
+
+	ui? ( app-emacs/lsp-ui )
+	flycheck? ( app-emacs/flycheck )
+	company? ( app-emacs/company-lsp )
+	treemacs? ( app-emacs/lsp-treemacs )
+	helm? ( app-emacs/helm-lsp )
+	ivy?  ( app-emacs/lsp-ivy )
+	dap? ( app-emacs/dap-mode )
 
 	python? ( || ( dev-python/python-language-server dev-python/ms-python-language-server ) )
 "
