@@ -34,6 +34,7 @@ DEPEND="
 	dap? ( app-emacs/dap-mode )
 
 	python? ( || ( dev-python/python-language-server dev-python/ms-python-language-server ) )
+	bash? ( app-misc/bash-language-server )
 "
 
 # TODO: Create other lsp-servers.
