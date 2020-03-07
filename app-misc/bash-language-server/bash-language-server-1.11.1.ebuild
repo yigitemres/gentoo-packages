@@ -1,0 +1,145 @@
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+NODE_DEPEND="
+	abab:2.0.3
+	acorn-globals:4.3.4
+	acorn-walk:6.2.0
+	acorn:5.7.3
+	acorn:6.4.0
+	ajv:6.12.0
+	array-equal:1.0.0
+	asn1:0.2.4
+	assert-plus:1.0.0
+	async-limiter:1.0.1
+	asynckit:0.4.0
+	aws-sign2:0.7.0
+	aws4:1.9.1
+	balanced-match:1.0.0
+	bash-language-server:1.11.1
+	bcrypt-pbkdf:1.0.2
+	brace-expansion:1.1.11
+	browser-process-hrtime:1.0.0
+	caseless:0.12.0
+	combined-stream:1.0.8
+	concat-map:0.0.1
+	core-util-is:1.0.2
+	cssom:0.3.8
+	cssstyle:1.4.0
+	dashdash:1.14.1
+	data-urls:1.1.0
+	deep-is:0.1.3
+	delayed-stream:1.0.0
+	domexception:1.0.1
+	ecc-jsbn:0.1.2
+	escodegen:1.14.1
+	esprima:4.0.1
+	estraverse:4.3.0
+	esutils:2.0.3
+	extend:3.0.2
+	extsprintf:1.3.0
+	extsprintf:1.4.0
+	fast-deep-equal:3.1.1
+	fast-json-stable-stringify:2.1.0
+	fast-levenshtein:2.0.6
+	forever-agent:0.6.1
+	form-data:2.3.3
+	fs.realpath:1.0.0
+	fuzzy-search:3.2.1
+	getpass:0.1.7
+	glob:7.1.6
+	har-schema:2.0.0
+	har-validator:5.1.3
+	html-encoding-sniffer:1.0.2
+	http-signature:1.2.0
+	iconv-lite:0.4.24
+	inflight:1.0.6
+	inherits:2.0.4
+	is-typedarray:1.0.0
+	isstream:0.1.2
+	jsbn:0.1.1
+	jsdom:11.12.0
+	json-schema-traverse:0.4.1
+	json-schema:0.2.3
+	json-stringify-safe:5.0.1
+	jsprim:1.4.1
+	left-pad:1.3.0
+	levn:0.3.0
+	lodash.sortby:4.7.0
+	lodash:4.17.15
+	mime-db:1.43.0
+	mime-types:2.1.26
+	minimatch:3.0.4
+	nwsapi:2.2.0
+	oauth-sign:0.9.0
+	once:1.4.0
+	optionator:0.8.3
+	parse5:4.0.0
+	path-is-absolute:1.0.1
+	performance-now:2.1.0
+	pn:1.1.0
+	prelude-ls:1.1.2
+	psl:1.7.0
+	punycode:2.1.1
+	qs:6.5.2
+	request-promise-core:1.1.3
+	request-promise-native:1.0.8
+	request:2.88.2
+	safe-buffer:5.2.0
+	safer-buffer:2.1.2
+	sax:1.2.4
+	source-map:0.6.1
+	sshpk:1.16.1
+	stealthy-require:1.1.1
+	symbol-tree:3.2.4
+	tough-cookie:2.5.0
+	tr46:1.0.1
+	tunnel-agent:0.6.0
+	turndown:4.0.2
+	tweetnacl:0.14.5
+	type-check:0.3.2
+	uri-js:4.2.2
+	urijs:1.19.2
+	uuid:3.4.0
+	verror:1.10.0
+	vscode-jsonrpc:4.0.0
+	vscode-languageserver-protocol:3.14.1
+	vscode-languageserver-types:3.14.0
+	vscode-languageserver:5.2.1
+	vscode-uri:1.0.8
+	w3c-hr-time:1.0.2
+	web-tree-sitter:0.16.2
+	webidl-conversions:4.0.2
+	whatwg-encoding:1.0.5
+	whatwg-mimetype:2.3.0
+	whatwg-url:6.5.0
+	whatwg-url:7.1.0
+	word-wrap:1.2.3
+	wrappy:1.0.2
+	ws:5.2.2
+	xml-name-validator:3.0.0
+"
+NODE_BIN="
+	bash-language-server:bin/main.js
+"
+
+inherit node
+
+DESCRIPTION="A language server for Bash."
+HOMEPAGE="https://github.com/bash-lsp/bash-language-server"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="~amd64 ~x86"
+
+DEPEND="
+	net-libs/nodejs
+"
+BDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}"
+
+src_install(){
+	node_src_install
+}
