@@ -34,20 +34,24 @@ RDEPEND="${DEPEND}"
 
 SITEFILE="99${PN}-gentoo.el"
 
-src_compile()
-{
+src_compile(){
 	if use dired ; then
 		mv src/extra/treemacs-icons-dired.el .
-	elif use evil ; then
+	fi
+	if use evil ; then
 		mv src/extra/treemacs-evil.el .
-	elif use magit ; then
+	fi
+	if use magit ; then
 		mv src/extra/treemacs-magit.el .
-	elif use persp ; then
+	fi
+	if use persp ; then
 		mv src/extra/treemacs-persp.el .
-	elif use projectile ; then
+	fi
+	if use projectile ; then
 		mv src/extra/treemacs-projectile.el .
 	fi
-		mv src/elisp/* .
+
+	mv  src/elisp/* .
 
 	elisp_src_compile
 	elisp-make-autoload-file
