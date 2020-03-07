@@ -13,14 +13,14 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="app-emacs/pg-el"
+DEPEND="app-emacs/pg"
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"
 
 SITEFILE="99${PN}-gentoo.el"
 
 src_compile(){
-	sed -i 's/-L ..\/pg/-L \/usr\/share\/emacs\/site-lisp\/pg-el/' Makefile
+	sed -i 's/-L ..\/pg/-L \/usr\/share\/emacs\/site-lisp\/pg/' Makefile
 	emake
 	elisp-make-autoload-file
 }
