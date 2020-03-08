@@ -1,4 +1,4 @@
-# Take from annis234/jm-overlay.
+# Take from jannis234/jm-overlay.
 # Copyright 2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
