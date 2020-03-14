@@ -35,6 +35,7 @@ DEPEND="
 
 	python? ( || ( dev-python/python-language-server dev-python/ms-python-language-server ) )
 	bash? ( app-misc/bash-language-server )
+	java? ( app-emacs/lsp-java )
 "
 
 # TODO: Create other lsp-servers.
@@ -45,31 +46,10 @@ RDEPEND="${DEPEND}"
 SITEFILE="99${PN}-gentoo.el"
 
 src_compile(){
-
-	if use python ; then
-		elisp-compile lsp-pyls.el .
-	fi
-
-	elisp-compile lsp.el .
-	elisp-compile lsp-mode.el .
-	elisp-compile lsp-clients.el .
-
+	elisp_src_compile
 	elisp-make-autoload-file
 }
 
 src_install(){
-
-	if use python; then
-		elisp-install ${PN} lsp-pyls.el*
-	fi
-
-	elisp-install ${PN} lsp.el*
-	elisp-install ${PN} lsp-mode.el*
-	elisp-install ${PN} lsp-mode-autoloads.el
-	elisp-install ${PN} lsp-clients.el*
-	elisp-site-file-install "${FILESDIR}/${SITEFILE}"
-}
-
-pkg_postinst(){
-	elisp-site-regen
+	elisp_src_install
 }
