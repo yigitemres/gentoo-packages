@@ -9,7 +9,7 @@ DESCRIPTION="Next browser - Be productive."
 HOMEPAGE="https://github.com/atlas-engineer/next"
 EGIT_REPO_URI="https://github.com/atlas-engineer/next.git"
 
-# TODO: Necessary to download files script. Gonna fix all dependency installs by creating dev-lisp.
+# TODO: Necessary to download files script. Gonna fix all (am I ?) dependency installs by creating dev-lisp.
 RESTRICT="network-sandbox"
 
 LICENSE="BSD"
@@ -30,7 +30,10 @@ src_compile(){
 }
 
 src_install(){
-	emake DESTDIR="${D}" install
+	emake \
+		DESTDIR="${D}" \
+		PREFIX="/usr" \
+		install
 }
 
 pkg_postinst(){
