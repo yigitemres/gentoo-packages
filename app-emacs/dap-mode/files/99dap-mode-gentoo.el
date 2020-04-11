@@ -1,2 +1,2 @@
-(add-to-list 'load-path "@SITEFILE@")
+(add-to-list 'load-path "@SITELISP@")
 (load "dap-mode-autoloads.el" nil t)
