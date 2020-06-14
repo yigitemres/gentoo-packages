@@ -5,9 +5,9 @@ EAPI=7
 
 inherit autotools git-r3
 
-DESCRIPTION="Next browser - Be productive."
-HOMEPAGE="https://github.com/atlas-engineer/next"
-EGIT_REPO_URI="https://github.com/atlas-engineer/next.git"
+DESCRIPTION="Nyxt (formerly Next) browser - Be productive."
+HOMEPAGE="https://github.com/atlas-engineer/nyxt"
+EGIT_REPO_URI="https://github.com/atlas-engineer/nyxt.git"
 
 # TODO: Necessary to download files script. Gonna fix all (am I ?) dependency installs by creating dev-lisp.
 RESTRICT="network-sandbox"
