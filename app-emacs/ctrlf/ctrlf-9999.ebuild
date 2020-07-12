@@ -5,17 +5,19 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="Pop a posframe (just a child-frame) at point."
-HOMEPAGE="https://github.com/tumashu/posframe"
-EGIT_REPO_URI="https://github.com/tumashu/posframe.git"
+DESCRIPTION="Emacs finally learns how to ctrl+F."
+HOMEPAGE="https://github.com/raxod502/ctrlf"
+EGIT_REPO_URI="https://github.com/raxod502/ctrlf.git"
 
-LICENSE="GPL-3"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND=""
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"
+
+SITEFILE="99${PN}-gentoo.el"
 
 src_compile(){
 	elisp_src_compile
