@@ -12,6 +12,7 @@ EGIT_REPO_URI="https://github.com/romkatv/powerlevel10k.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+RESTRICT="network-sandbox"
 
 DEPEND="app-shells/zsh"
 BDEPEND="${DEPEND}"
@@ -27,8 +28,12 @@ src_install(){
 	insinto /usr/share/zsh/powerlevel10k/gitstatus
 	doins  gitstatus/*.zsh
 
-	exeinto /usr/share/zsh/powerlevel10k/gitstatus/bin
-	doexe  gitstatus/bin/gitstatusd-linux-x86_64*
+	insinto /usr/share/zsh/powerlevel10k/gitstatus
+	doins  gitstatus/install
+	doins  gitstatus/install.info
+
+	#exeinto /usr/share/zsh/powerlevel10k/gitstatus/bin
+	#doexe  gitstatus/usrbin/gitstatusd-linux-x86_64*
 
 	insinto /usr/share/zsh/powerlevel10k/internal
 	doins -r internal/*
