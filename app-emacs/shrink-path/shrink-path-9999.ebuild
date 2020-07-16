@@ -5,7 +5,7 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="Small utility functions that allow for fish-style trunctated directories in eshell and for example modeline."
+DESCRIPTION="Fish-style trunctated directories in eshell."
 HOMEPAGE="https://gitlab.com/bennya/shrink-path.el"
 EGIT_REPO_URI="https://gitlab.com/bennya/shrink-path.el.git"
 

@@ -23,8 +23,8 @@ src_compile(){
 	elisp_src_compile
 	elisp-make-autoload-file
 
-	mkdir -p ${WORKDIR}/${P}/build
-	cd ${WORKDIR}/${P}/build
+	mkdir -p "${WORKDIR}/${P}/build"
+	cd "${WORKDIR}/${P}/build"
 
 	cmake -DUSE_SYSTEM_LIBVTERM=yes ..
 	emake

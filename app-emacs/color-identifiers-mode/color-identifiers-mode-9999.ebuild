@@ -5,7 +5,7 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="Emacs minor mode to highlight each source code identifier uniquely based on its name."
+DESCRIPTION="Minor mode to highlight each source code identifier uniquely based on its name."
 HOMEPAGE="https://github.com/ankurdave/color-identifiers-mode"
 EGIT_REPO_URI="https://github.com/ankurdave/color-identifiers-mode.git"
 

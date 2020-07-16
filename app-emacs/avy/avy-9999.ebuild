@@ -5,7 +5,7 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="avy is a GNU Emacs package for jumping to visible text using a char-based decision tree."
+DESCRIPTION="Avy is a package for jumping to visible text using a char-based decision tree."
 HOMEPAGE="https://github.com/abo-abo/avy"
 EGIT_REPO_URI="https://github.com/abo-abo/avy.git"
 

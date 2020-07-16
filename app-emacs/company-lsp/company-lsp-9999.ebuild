@@ -22,7 +22,6 @@ DEPEND="
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"
 
-
 SITEFILE="99${PN}-gentoo.el"
 
 src_compile(){

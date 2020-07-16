@@ -5,7 +5,7 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="This package displays keyword entries from source code comments and Org files in the Magit status buffer. Activating an item jumps to it in its file."
+DESCRIPTION="Displays keyword entries from source code comments."
 HOMEPAGE="https://github.com/alphapapa/magit-todos"
 EGIT_REPO_URI="https://github.com/alphapapa/magit-todos.git"
 

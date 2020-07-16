@@ -5,7 +5,7 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="Swiper - isearch with an overview and more, Ivy - a generic completion frontend for Emacs."
+DESCRIPTION="Swiper, Counsel, Ivy "
 HOMEPAGE="https://github.com/abo-abo/swiper"
 EGIT_REPO_URI="https://github.com/abo-abo/swiper.git"
 

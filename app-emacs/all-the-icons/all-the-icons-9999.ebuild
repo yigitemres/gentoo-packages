@@ -5,7 +5,7 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="A utility package to collect various Icon Fonts and propertize them within Emacs."
+DESCRIPTION="A utility package to collect various Icon Fonts."
 HOMEPAGE="https://github.com/domtronn/all-the-icons.el"
 EGIT_REPO_URI="https://github.com/domtronn/all-the-icons.el.git"
 

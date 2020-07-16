@@ -24,7 +24,6 @@ src_compile(){
 	elisp-make-autoload-file
 }
 
-
 src_install(){
 	elisp_src_install
 }
