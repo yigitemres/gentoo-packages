@@ -8,7 +8,7 @@ EAPI=7
 
 inherit elisp git-r3 readme.gentoo-r1
 
-DESCRIPTION="Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system."
+DESCRIPTION="Org mode is a fast and effective plain-text system."
 HOMEPAGE="https://orgmode.org/"
 EGIT_REPO_URI="https://code.orgmode.org/bzg/org-mode.git"
 EGIT_CHECKOUT_DIR="${WORKDIR}/org"
