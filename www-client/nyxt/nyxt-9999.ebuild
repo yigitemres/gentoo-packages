@@ -9,7 +9,7 @@ DESCRIPTION="Nyxt (formerly Next) browser - Be productive."
 HOMEPAGE="https://github.com/atlas-engineer/nyxt"
 EGIT_REPO_URI="https://github.com/atlas-engineer/nyxt.git"
 
-# TODO: Necessary to download files script. Gonna fix all (am I ?) dependency installs by creating dev-lisp.
+# TODO: Necessary to download dependencies. Otherwise, create dev-lisp packages.
 RESTRICT="network-sandbox"
 
 LICENSE="BSD"

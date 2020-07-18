@@ -17,6 +17,8 @@ DEPEND="sys-libs/glibc"
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"
 
+#after compile - libtool: warning: remember to run 'libtool --finish /usr/lib64'
+
 src_prepare(){
 	default
 	eautoreconf
