@@ -24,7 +24,7 @@ SITEFILE="99${PN}-gentoo.el"
 
 src_prepare(){
 	default
-	unpack tree-sitter-grammars-linux-0.1.0.tar.gz
+	unpack "tree-sitter-grammars-linux-0.1.0.tar.gz"
 
 	#removing json so fix module is not gpl error.
 	rm json.so
@@ -40,6 +40,42 @@ src_compile(){
 src_install(){
 	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/
 	doins langs/*.el*
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/c
+	doins langs/queries/c/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/cpp
+	doins langs/queries/cpp/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/css
+	doins langs/queries/css/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/go
+	doins langs/queries/go/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/html
+	doins langs/queries/html/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/java
+	doins langs/queries/java/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/javascript
+	doins langs/queries/javascript/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/php
+	doins langs/queries/php/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/python
+	doins langs/queries/python/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/ruby
+	doins langs/queries/ruby/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/rust
+	doins langs/queries/rust/highlights.scm
+
+	insinto /usr/share/emacs/site-lisp/tree-sitter-langs/queries/typescript
+	doins langs/queries/typescript/highlights.scm
 
 	exeinto /usr/share/emacs/site-lisp/tree-sitter-langs/bin
 	doexe *.so

@@ -35,7 +35,7 @@ src_compile(){
 	elisp-compile lisp/tree-sitter-cli.el
 	elisp-compile langs/tree-sitter-langs-build.el
 
-	cd ${S}/lisp
+	cd "${S}/lisp"
 	elisp-make-autoload-file
 }
 
