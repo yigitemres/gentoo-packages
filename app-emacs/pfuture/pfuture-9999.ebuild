@@ -5,7 +5,7 @@ EAPI=7
 
 inherit elisp git-r3
 
-DESCRIPTION="Set of simple functions wrapping Emacs’ existing process creation capabilities."
+DESCRIPTION="Set of simple functions wrapping Emacs' existing process creation capabilities."
 HOMEPAGE="https://github.com/Alexander-Miller/pfuture"
 EGIT_REPO_URI="https://github.com/Alexander-Miller/pfuture.git"
 

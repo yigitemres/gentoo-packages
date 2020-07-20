@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/emacsorphanage/god-mode.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 
 DEPEND=""
 BDEPEND="${DEPEND}"

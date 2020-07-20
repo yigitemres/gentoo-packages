@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/raxod502/prescient.el.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 
 DEPEND=""
 BDEPEND="${DEPEND}"
