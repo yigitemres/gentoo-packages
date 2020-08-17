@@ -20,7 +20,7 @@ DEPEND="
 	dev-db/sqlite
 	dev-lisp/sbcl
 	sys-libs/libfixposix
-	>=x11-libs/gtk+-3*
+	=x11-libs/gtk+-3*
 	x11-misc/xclip
 "
 BDEPEND="${DEPEND}"
