@@ -1,9 +1,10 @@
 # Copyright 2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python{2_7,3_{6,7,8}} )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python{2_7,3_{6,7,8,9,10,11,12,13}} )
 
 inherit distutils-r1 git-r3
 
@@ -15,10 +16,8 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/setuptools_scm
-"
+DEPEND=""
+
 BDEPEND="${DEPEND}"
 RDEPEND="${DEPEND}"
 
